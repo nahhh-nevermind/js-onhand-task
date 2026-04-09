@@ -307,6 +307,9 @@
             titleInput.value = "";
             contentInput.value = "";
             titleInput.focus();
+
+            addBtn.addEventListener("click", addNotes);
+            clearAllBtn.addEventListener("click", clearAllNotes);
         }
 
         function deleteNoteById(id) {
@@ -336,6 +339,9 @@
                 renderNotes();
                 alert("✨All notes have been cleared.");
             }
+
+            addBtn.addEventListener("click", addNotes);
+            clearAllBtn.addEventListener("click", clearAllNotes);
         }
     </script>
 </body>
