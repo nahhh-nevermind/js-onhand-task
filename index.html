@@ -311,9 +311,6 @@
             titleInput.value = "";
             contentInput.value = "";
             titleInput.focus();
-
-            addBtn.addEventListener("click", addNote);
-            clearAllBtn.addEventListener("click", clearAllNotes);
         }
 
         function deleteNoteById(id) {
@@ -343,9 +340,6 @@
                 renderNotes();
                 alert("✨All notes have been cleared.");
             }
-
-            addBtn.addEventListener("click", addNote);
-            clearAllBtn.addEventListener("click", clearAllNotes);
         }
 
         notesContainer.addEventListener("click", (e) => {
@@ -356,6 +350,9 @@
                 deleteNoteById(id);
             }
         });
+
+        addBtn.addEventListener("click", addNote);
+        clearAllBtn.addEventListener("click", clearAllNotes);
     </script>
 </body>
 
