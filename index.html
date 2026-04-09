@@ -228,7 +228,6 @@
             </div>
         </div>
     </div>
-    </div>
     <script>
         let notes = [];
         let nextId = 1;
@@ -245,7 +244,7 @@
 
         function updateCounter() {
             const count = notes.length;
-            noteCounterSpan.textContent = count === 1 ? "1 note" : `&{count} notes`
+            noteCounterSpan.textContent = count === 1 ? "1 note" : `${count} notes`
         }
 
         function renderNotes() {
