@@ -182,8 +182,10 @@
         }
 
         footer {
-            text-align: center; margin-top: 2rem;
-            font-size: 0.7rem; color: #5b6e8c;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.7rem;
+            color: #5b6e8c;
         }
     </style>
 
@@ -375,20 +377,20 @@
         }
 
         function addSampleNotes() {
-             if (notes.length === 0) {
-                     notes.push({
-                     id: nextId++,
-                     title: "Hello BOM",
-                     content: "Try resizing the window → watch width/height update!"
-                     });
-                     notes.push({
-                     id: nextId++,
-                     title: "Delete me",
-                     content: "Click delete and confirm the BOM confirm box."
-                     });
-                     renderNotes();
-                 }
+            if (notes.length === 0) {
+                notes.push({
+                    id: nextId++,
+                    title: "Hello BOM",
+                    content: "Try resizing the window → watch width/height update!"
+                });
+                notes.push({
+                    id: nextId++,
+                    title: "Delete me",
+                    content: "Click delete and confirm the BOM confirm box."
+                });
+                renderNotes();
             }
+        }
 
         function init() {
             addSampleNotes(); // populate demo notes
@@ -402,8 +404,8 @@
     </script>
 </body>
 <footer>
- 💡💡 BOM: confirm() on delete · alert() on empty title
- · resize event updates window size.
+    💡💡 BOM: confirm() on delete · alert() on empty title
+    · resize event updates window size.
 </footer>
 
 </html>
