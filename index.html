@@ -353,6 +353,12 @@
 
         addBtn.addEventListener("click", addNote);
         clearAllBtn.addEventListener("click", clearAllNotes);
+
+        function updateWindowSize() {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            windowSizeSpan.textContent = `${w} x ${h} px`;
+        }
     </script>
 </body>
 
